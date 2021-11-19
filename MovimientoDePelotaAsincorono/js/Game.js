@@ -27,20 +27,22 @@ class Game{
             form = new Form();
             form.display();
         }
+        
+        car1=createSprite(100,200);
+        car2=createSprite(300,200);
+        car3=createSprite(500,200);
+        car4=createSprite(700,200);
+        cars=[car1,car2,car3,car4];
     }
     
-    car1=createSprite(100,200);
-    car2=createSprite(300,200);
-    car3=createSprite(500,200);
-    car4=createSprite(700,200);
-    cars=[car1,car2,car3,car4]
+
 
     play(){
      form.hide();
      //textSize(30);
      //text("Comienzo del juego",120,100);
      Player.getPlayerInfo();
-     if(allPlayers!==undefined){
+     if(allPlayers !== undefined){
          var index=0;
          //posision de los coches en x y y
          var x=0;
